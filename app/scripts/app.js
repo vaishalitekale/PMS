@@ -29,6 +29,11 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
+	  .when('/directive', {
+        templateUrl: 'views/rightside_directive.html',
+        controller: 'DirectiveCtrl',
+        controllerAs: 'sampledir'
+      })
       .otherwise({
         redirectTo: '/'
       });
